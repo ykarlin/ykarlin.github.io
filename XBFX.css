@@ -1,7 +1,3 @@
-
-p, h2, h3 {
-    text-align: center;
-}
 body {
     background-color: rgb(255, 222, 146);
     margin: 0;
@@ -31,8 +27,6 @@ color: black;
 }
 .header a.home {
     color: black;
-    background-color: lightblue;
-
 }
 .left {
 float: left;
