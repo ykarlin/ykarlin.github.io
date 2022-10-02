@@ -4,6 +4,7 @@ p, h2, h3 {
 }
 body {
     background-color: rgb(255, 222, 146);
+<<<<<<< HEAD
     margin: 0;
 }
 .header {
@@ -40,3 +41,6 @@ float: left;
 .right {
     float: right;
 }
+=======
+}
+>>>>>>> 6494c438974d91d767e6c5c280f8ac571d7130b7
