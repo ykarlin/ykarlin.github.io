@@ -1,6 +1,11 @@
 body {
     background-color: rgb(255, 222, 146);
+    background-image: url(https://media.istockphoto.com/photos/squad-of-three-fully-equipped-and-armed-soldiers-standing-on-hill-in-picture-id814366912?k=20&m=814366912&s=612x612&w=0&h=wGRbVgbxF59IIdpB2cdXs6S6gEFyhrm2mO7LAEmNj6s=);
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: scroll;
 }
 .header {
     overflow: hidden;
@@ -33,4 +38,12 @@ float: left;
 }
 .right {
     float: right;
+}
+
+.big {
+    text-align: center;
+}
+
+.head1 {
+    text-align: center;
 }
