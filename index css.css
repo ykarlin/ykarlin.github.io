@@ -6,78 +6,63 @@
 
 /*all */
 
-*{
-    /* LIVE BACKROUND */ 
+* {
+    /* LIVE BACKROUND */
     margin: 0px;
     padding: 0px;
 }
 
-.circle {
-position: absolute;
-border-radius: 10px 100px / 120px;
-/* learn  this stuff */
-background-color: #8f94fb;
-border: 5px solid crimson;
-}
-
-/* LIVE BACKROUND */ 
-
-.area {
-    
-/* cubes color */
-
-background: -webkit-linear-gradient(to left, #8f94fb);
-width: 100%;
-/* height:100vh;  */
-}
-
-.circles {
-position: relative;
-top: 0px;
-left:0;
-overflow: hidden;
-height: 100%;
-width:100%;
-/* investigate */
-/* z-index: -1; */
-}
-
-.circles li {
-position: absolute;
-display: block;
-/* stop */
-list-style: none;
-}
-
-
-/* tags */
-p, h2, h3 {
-    text-align: center;
-}
-
 body {
     font-family: 'exo', sans-serif;
-    background: rgb(75, 75, 75);
+    position: relative;
+    /* scroll bar P fix vh */
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    color: cornflowerblue;
+    /* top: 0px; */
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
 }
 
-/* top header */
 .header {
     overflow: hidden;
-    background-color: #ffffff93;
+    background-color: #ffffff69;
     padding: 10px 10px;
-   }
-.stick {
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    top:0px;
+    border-radius: 25px;
+    /* align-items: center; */
+    margin: auto;
+    /* justify-items: center; */
+    box-sizing: border-box;
+
 }
 
-.header a.logo /* need fix :hover*/ { 
-font-size: 15px;
-font-weight: bold;
-color: rgb(242, 186, 114);
-position: static;
+.stick {
+    position: sticky;
+    /* height: 70px; */
+    width: 95%;
+    top: 2px;
+    /* problem 2 sides */
+    /* left: 3px; */
+    /* right: 3px; */
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* display: inline-block; */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 100px 100px / 120px;
+    background-color: rgb(51, 45, 45);
+    border: 3px solid rgb(255, 64, 0);
+    bottom: 10px;
+    top: 7px;
+    left: 10px;
 }
 
 /* "a" = this selects all the <a> tags inside all the elements with the .header class */
@@ -87,13 +72,9 @@ position: static;
     color: black;
     padding: 10px;
     text-decoration: none;
-    line-height: 25px;
+    /* line-height: 25px; */
     border-radius: 4px;
-}
-
-.right a:hover {
-background-color: #ddd;
-color: black;
+    /* box-sizing: border-box; */
 }
 
 .header a.home {
@@ -106,29 +87,29 @@ color: black;
     font-size: 20px;
 }
 
-/*
-
-??????????
-
-.left {
-float: left;
+/* need fix :hover*/
+.header a.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(111, 248, 250);
+    position: static;
 }
-
-*/
 
 /* home button rigth */
-
 .right {
     float: right;
-    padding-right: 10px;
-    
 }
 
-/* practice backround color */
+.right :hover {
+    background-color: #ddd;
+    color: black;
+}
 
-.top1 {
-background-color: lightblue;
-
+/* LIVE BACKROUND */
+.area {
+    /* cubes color */
+    background: -webkit-linear-gradient(to left, #8f94fb);
+    /* width: 100%; */
 }
 
 main {
@@ -137,10 +118,65 @@ main {
     margin-top: 69px;
 }
 
-footer {
+.cubes {
+    position: relative;
+    top: 0px;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* investigate */
+    /* z-index: -1; */
+}
+
+.cubes li {
+    position: absolute;
+    display: block;
+    /* stop */
+    list-style: none;
+}
+
+.top1 {
+    background-color: rgb(1, 77, 102);
+    border-radius: 5px;
+    border: 4px solid rgba(121, 121, 121, 0.482);
+    margin-top: 30px;
+
+}
+
+/* tags */
+p,
+h2,
+h3 {
     text-align: center;
 }
 
 #buttons {
     padding-left: 10px;
 }
+
+footer {
+    text-align: center;
+}
+
+article {
+    line-height: 2.5;
+}
+ .background {
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 100% 25%;
+ }
+
+ article {
+    margin-top: 50px;    
+ }
+
+/* scroll bar */
+
+.scroll {
+    box-sizing: border-box;
+}
+ 
